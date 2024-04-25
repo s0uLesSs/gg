@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="158dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password23"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:text="@string/enter_your_email_address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_address23"
+                    android:textColor="@color/ggr"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/forgotpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input_border"
+                    android:ems="10"
+                    android:hint="@string/fgh"
+                    android:inputType="textPersonName"
+                    android:padding="14dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/veri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/ggr"
+                    android:onClick="StendOTP1"
+                    android:text="@string/send_otp"
+                    android:textAllCaps="false" />
+
+                <LinearLayout
+                    android:layout_width="291dp"
+                    android:layout_height="78dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remember_password_back_to"
+                        android:textColor="@color/ggr"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/LogIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:onClick="LogIn"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/blur"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
